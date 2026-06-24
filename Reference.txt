@@ -1,0 +1,16 @@
+# ============================
+# AI_base Class Reference
+# ============================
+# self.list_of_Players  → the FULL original list of all players (never changes)
+# self.difficulty        → string: "Easy", "Medium", "Hard", or "Super"
+# self.clues             → dictionary that grows as hints come in (e.g. {"position": "Forward", "league": "Premier League"})
+# self.candidates        → list of players still possible (starts as a copy of list_of_Players, shrinks as clues eliminate players)
+#
+# receive_hints(hints)   → takes new clues, adds to self.clues, filters self.candidates using ALL clues
+# make_guess()           → checks difficulty, decides whether to guess or wait, returns player name or None
+#
+# Difficulty Logic:
+# Easy   → picks randomly from self.candidates, no strategy
+# Medium → re-filters using only obvious clues (position, league, country, club), then random pick
+# Hard   → uses fully filtered self.candidates, calculates confidence, only guesses when confident
+# Super  → "It knows." — elite AI but starts with a handicap (player gets hints first)

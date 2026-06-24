@@ -1,0 +1,45 @@
+FOOTBALL GUESSING GAME - PROJECT SUMMARY
+Concept:
+A competitive guessing game where players race against an AI opponent to identify mystery footballers based on progressively revealed statistics. Inspired by "Guess Who" board game meets football trivia, with a time pressure element called "Beat the Press."
+
+Core Mechanics:
+Progressive Hint System:
+
+15 statistical categories randomly shuffled each game
+2 hints revealed per round
+Categories include: career goals, assists, matches played, age, position, league, club, country, jersey number, titles won, World Cup status, clean sheets, yellow/red cards
+
+Timer ("Beat the Press"):
+
+30 seconds per round (constant across all difficulties)
+Players can guess multiple times within 30 seconds
+First correct guess wins the round
+
+AI Opponent Difficulty:
+
+Easy: Random guessing, doesn't analyze hints
+Medium: Basic elimination using obvious hints (league, position)
+Hard: Strategic deduction using multiple hints, high accuracy
+
+Win Condition:
+
+First to guess correctly wins the round
+Points tracked across multiple rounds
+
+
+Technical Implementation:
+Object-Oriented Architecture:
+
+Player class: Stores footballer data (15+ attributes)
+Game class: Manages game state, hint revelation, AI logic
+Player database: 10 professional footballers with real Transfermarkt statistics
+
+Gamechangers
+Inspired by baller league , these gamechnagers affect the game for both opponentsn 
+
+Technologies:
+
+Python 3.x
+OOP principles (classes, encapsulation, inheritance)
+Data structures (dictionaries, lists)
+Random algorithms for hint shuffling
