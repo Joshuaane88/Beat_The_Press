@@ -26,16 +26,34 @@ Win Condition:
 First to guess correctly wins the round
 Points tracked across multiple rounds
 
+Could potentially expand to managers and clubs , need to take into account previous clubs as well
+Trophy system , maybe weekly league ;, claim the top pot after x games in a league wins you a trophy 
 
 Technical Implementation:
 Object-Oriented Architecture:
 
 Player class: Stores footballer data (15+ attributes)
 Game class: Manages game state, hint revelation, AI logic
-Player database: 10 professional footballers with real Transfermarkt statistics
+Player database: 10 professional footballers with real Transfer market statistics
 
 Gamechangers
-Inspired by baller league , these gamechnagers affect the game for both opponentsn 
+Inspired by baller league , these Gamechangers affect the game for both opponents
+Game chnager names can later be renamed to viral football , momnts , or incorpate popular commentry.
+
+
+List of Gamechangers
+# False 9 - Revealed hints for the next x seconds are false
+# Park the bus - No new hints are Revelead for the next x seconds
+# Father of Gegenpress - When evoked guss times are reduced by a percentage , forcing players into quick decisions 
+# Trickster - Hints are shuffled across the different categories , the players goals can now be assistst , previous club could be current ,
+              but beware not all shuffled categories are incorrect 
+# Transfer Ban - Players can block categories before the round starts , these bans are permament and last for the rest of the game , you can pick what is banned. 
+                Restrictions need to be put in place to for bans , maybe you can only ban either goals or assisst noot both , or previous club and current club , either
+#  Flipped - Stats and hnt reveals are based on concepts from other sports, nba , baseball, nfl , cfb and etc . 
+            in addition incorpate footy sander names and viral football memes
+#12th Man - In football games the crowd always plays a role in deciding the winner of the game , will feature live crowd sounds(Hopefully not copyrighted) 
+            The crowd picks what hints to reveal and in their own way reveals based on the hint. This is an example of an easy mode version , MR UCL , MR UCL , MR UCL!
+
 
 Technologies:
 

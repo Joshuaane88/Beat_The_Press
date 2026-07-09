@@ -3,7 +3,6 @@ from shell import Player
 
 def load_players():
     players = [
-
         Player(
             name="Alisson Becker",
             club="Liverpool",
@@ -20,8 +19,8 @@ def load_players():
             international_trophy=True,
             clean_sheets=220,
             yellow_cards=5,
-            red_cards=0),
-
+            red_cards=0,
+        ),
         Player(
             name="Virgil van Dijk",
             club="Liverpool",
@@ -38,10 +37,8 @@ def load_players():
             international_trophy=True,
             clean_sheets=180,
             yellow_cards=50,
-            red_cards=3
+            red_cards=3,
         ),
-
-
         Player(
             name="Jude Bellingham",
             club="Real Madrid",
@@ -58,10 +55,8 @@ def load_players():
             international_trophy=False,
             clean_sheets=0,
             yellow_cards=20,
-            red_cards=2
+            red_cards=2,
         ),
-
-
         Player(
             name="Kevin De Bruyne",
             club="Napoli",
@@ -78,10 +73,8 @@ def load_players():
             international_trophy=False,
             clean_sheets=0,
             yellow_cards=40,
-            red_cards=1
+            red_cards=1,
         ),
-
-
         Player(
             name="Vinicius Jr",
             club="Real Madrid",
@@ -98,10 +91,8 @@ def load_players():
             international_trophy=False,
             clean_sheets=0,
             yellow_cards=35,
-            red_cards=3
+            red_cards=3,
         ),
-
-
         Player(
             name="Robert Lewandowski",
             club="Barcelona",
@@ -118,10 +109,8 @@ def load_players():
             international_trophy=False,
             clean_sheets=0,
             yellow_cards=25,
-            red_cards=2
+            red_cards=2,
         ),
-
-
         Player(
             name="Mohamed Salah",
             club="Liverpool",
@@ -138,9 +127,8 @@ def load_players():
             international_trophy=False,
             clean_sheets=0,
             yellow_cards=30,
-            red_cards=1),
-
-
+            red_cards=1,
+        ),
         Player(
             name="Erling Haaland",
             club="Manchester City",
@@ -157,9 +145,8 @@ def load_players():
             international_trophy=False,
             clean_sheets=0,
             yellow_cards=10,
-            red_cards=0),
-
-
+            red_cards=0,
+        ),
         Player(
             name="Kylian Mbappé",
             club="Real Madrid",
@@ -176,8 +163,8 @@ def load_players():
             international_trophy=True,
             clean_sheets=0,
             yellow_cards=15,
-            red_cards=1),
-
+            red_cards=1,
+        ),
         Player(
             name="Lionel Messi",
             club="Inter Miami",
@@ -194,9 +181,8 @@ def load_players():
             international_trophy=True,
             clean_sheets=0,
             yellow_cards=32,
-            red_cards=3
+            red_cards=3,
         ),
-
         Player(
             name="Mohammed Kudus",
             club="Tottenham Hotspur",
@@ -213,10 +199,12 @@ def load_players():
             international_trophy=False,
             clean_sheets=0,
             yellow_cards=18,
-            red_cards=1),
+            red_cards=1,
+        ),
     ]
 
     return players
+
 
 # test code
 
@@ -226,4 +214,5 @@ if __name__ == "__main__":
     print(f"Loaded {len(all_players)} players:")
     for player in all_players:
         print(
-            f"  - {player.name} ({player.reveal_data['position']}) - {player.reveal_data['club']}")
+            f"  - {player.name} ({player.reveal_data['position']}) - {player.reveal_data['club']}"
+        )
